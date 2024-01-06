@@ -10,6 +10,11 @@ Managers: Assign jobs, update jobs & delete jobs.
 
 Operatives: Update jobs
 
+TBA:
+
+Reports
+Payments/Invoices/Billing
+
 # Prequisites
 
 Node.js and npm (Node Package Manager) installed on the server hosting these files
