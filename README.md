@@ -3,7 +3,12 @@ A Pest Control booking system that utilises Azure AD for authentication and allo
 
 # Features
 
-TBC
+
+Assign Roles in Azure AD: Assign roles to users in Azure AD. You can use Azure AD groups or custom attributes to define roles like Manager or Operative.
+
+Managers: Assign jobs, update jobs & delete jobs. 
+
+Operatives: Update jobs
 
 # Prequisites
 
