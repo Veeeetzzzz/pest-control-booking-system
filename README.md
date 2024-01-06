@@ -1,6 +1,15 @@
 # Pest Control Booking System
 A Pest Control booking system that utilises Azure AD for authentication and allows managers to assign jobs and operatives to see details/act on appointments.
+
+# Prequisites
+
+Node.js and npm (Node Package Manager) installed on the server hosting these files
+
+Azure AD application registration completed with the necessary redirect URIs
+
 # Installation
+
+
 TBC
 # License
 License Agreement
