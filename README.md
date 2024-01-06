@@ -97,8 +97,7 @@ License Agreement
 
 5. Restrictions
 
-    The Licensee shall not modify, distribute, sublicense, or sell copies of the Software.
-    The Licensee shall not reverse-engineer, decompile, or disassemble the Software.
+    The Licensee shall sublicense, or sell copies of the Software.
 
 6. Contributions
 
