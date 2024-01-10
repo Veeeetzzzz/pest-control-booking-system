@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider, useMsal, useAccount } from "@azure/msal-react";
 import { msalConfig, loginRequest } from './authConfig';
-import ManagerView from './ManagerView'; // Import ManagerView
-import OperativeView from './OperativeView'; // Import OperativeView
+import ManagerView from './ManagerView';
+import OperativeView from './OperativeView';
+import logo from './path-to-logo.png'; // Replace with path to your logo image
+
 
 // SignIn button component
 const SignInButton = () => {
@@ -30,22 +32,18 @@ const SignOutButton = () => {
 
     return <button onClick={handleLogout}>Sign Out</button>;
 };
+const Navbar = ({ userRole }) => {
+    const managerOptions = ["Book New Job", "View Calendar", "Daily View", "Schedule Search", "Logins", "Officers", "Manage Officers", "Matrix"];
+    const operativeOptions = ["Book New Job", "View Calendar", "Daily View", "Unassigned", "Officers"];
 
-// Main App component
-const App = () => {
-    const msalInstance = new PublicClientApplication(msalConfig);
+    const options = userRole === 'Manager' ? managerOptions : operativeOptions;
 
     return (
-        <MsalProvider instance={msalInstance}>
-            <div className="App">
-                <h1>Welcome to the Pest Control Booking System</h1>
-                <SignInButton />
-                <SignOutButton />
-                {/* Additional app components go here */}
-            </div>
-        </MsalProvider>
+        <nav>
+            {options.map(option => <button key={option}>{option}</button>)}
+        </nav>
     );
-}
+};
 
 const MainContent = () => {
     const { accounts } = useMsal();
@@ -63,14 +61,12 @@ const MainContent = () => {
         return <SignInButton />;
     }
 
-    switch (userRole) {
-        case 'Manager':
-            return <ManagerView />;
-        case 'Operative':
-            return <OperativeView />;
-        default:
-            return <div>Loading...</div>;
-    }
+    return (
+        <>
+            <Navbar userRole={userRole} />
+            {userRole === 'Manager' ? <ManagerView /> : <OperativeView />}
+        </>
+    );
 };
 
 const App = () => {
@@ -79,7 +75,9 @@ const App = () => {
     return (
         <MsalProvider instance={msalInstance}>
             <div className="App">
-                <h1>Welcome to the Pest Control Booking System</h1>
+                <header>
+                    <img src={logo} alt="Logo" />
+                </header>
                 <MainContent />
                 <SignOutButton />
             </div>
