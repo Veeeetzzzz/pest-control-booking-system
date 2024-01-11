@@ -29,12 +29,22 @@ const ManagerView = () => {
                     </button>
                 </div>
 
+
+                {/* Placeholder for managing logins */}
+                <div className="Logins">
+                    <h3>Reports</h3>
+                    <button onClick={() => {/* logic to view reports */}}>
+                        View Reports
+                    </button>
+                </div>
+
                 {/* Placeholder for billing section */}
                 <div className="billing-section">
                     <h3>Billing</h3>
                     <button onClick={() => {/* logic for billing management */}}>
                         Manage Billing
                     </button>
+                 </div>
                 </div>
             </div>
         </div>
