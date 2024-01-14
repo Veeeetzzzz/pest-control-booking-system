@@ -21,7 +21,7 @@ Node.js and npm (Node Package Manager) installed on the server hosting these fil
 
 Azure AD application registration completed with the necessary redirect URIs
 
-Suitable host such as Azure Web Services.
+Suitable host that supports Github intergration - Azure Web Services & Vercel both offer React tempalates to link your Github too and easily deploy this project.
 
 # Installation
 
