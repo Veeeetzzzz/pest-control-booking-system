@@ -4,7 +4,7 @@ import { MsalProvider, useMsal, useAccount } from "@azure/msal-react";
 import { msalConfig, loginRequest } from './authConfig';
 import ManagerView from './ManagerView';
 import OperativeView from './OperativeView';
-import logo from './path-to-logo.png'; // Replace with path to your logo image
+// import logo from './path-to-logo.png'; // Replace with path to your logo image
 
 
 // SignIn button component
