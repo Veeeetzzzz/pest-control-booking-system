@@ -4,7 +4,6 @@ import { MsalProvider, useMsal, useAccount } from "@azure/msal-react";
 import { msalConfig, loginRequest } from './authConfig';
 import ManagerView from './ManagerView';
 import OperativeView from './OperativeView';
-import React from 'react';
 import './App.css';
 //import logo from './path-to-logo.png'; // Replace with path to your logo image
 
