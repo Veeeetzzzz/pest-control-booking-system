@@ -1,0 +1,26 @@
+.login-container {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.actions button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
