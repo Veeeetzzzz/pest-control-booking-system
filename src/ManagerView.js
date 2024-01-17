@@ -29,12 +29,11 @@ const ManagerView = () => {
                     </button>
                 </div>
 
-
                 {/* Placeholder for managing logins */}
-                <div className="Logins">
-                    <h3>Reports</h3>
-                    <button onClick={() => {/* logic to view reports */}}>
-                        View Reports
+                <div className="logins">
+                    <h3>Logins</h3>
+                    <button onClick={() => {/* logic to manage logins */}}>
+                        Manage Logins
                     </button>
                 </div>
 
@@ -44,7 +43,6 @@ const ManagerView = () => {
                     <button onClick={() => {/* logic for billing management */}}>
                         Manage Billing
                     </button>
-                 </div>
                 </div>
             </div>
         </div>
