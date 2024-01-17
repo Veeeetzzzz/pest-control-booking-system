@@ -4,85 +4,45 @@ import { MsalProvider, useMsal, useAccount } from "@azure/msal-react";
 import { msalConfig, loginRequest } from './authConfig';
 import ManagerView from './ManagerView';
 import OperativeView from './OperativeView';
+import React from 'react';
+import './App.css';
 //import logo from './path-to-logo.png'; // Replace with path to your logo image
 
-
-// SignIn button component
-const SignInButton = () => {
-    const { instance } = useMsal();
-
-    const handleLogin = () => {
-        instance.loginPopup(loginRequest).catch(e => {
-            console.error(e);
-        });
-    };
-
-    return <button onClick={handleLogin}>Sign In</button>;
-};
-
-// SignOut button component
-const SignOutButton = () => {
-    const { instance } = useMsal();
-
-    const handleLogout = () => {
-        instance.logoutPopup().catch(e => {
-            console.error(e);
-        });
-    };
-
-    return <button onClick={handleLogout}>Sign Out</button>;
-};
-const Navbar = ({ userRole }) => {
-    const managerOptions = ["Book New Job", "View Calendar", "Daily View", "Schedule Search", "Logins", "Officers", "Manage Officers", "Matrix"];
-    const operativeOptions = ["Book New Job", "View Calendar", "Daily View", "Unassigned", "Officers"];
-
-    const options = userRole === 'Manager' ? managerOptions : operativeOptions;
-
-    return (
-        <nav>
-            {options.map(option => <button key={option}>{option}</button>)}
-        </nav>
-    );
-};
-
-const MainContent = () => {
-    const { accounts } = useMsal();
-    const account = useAccount(accounts[0] || {});
-    const [userRole, setUserRole] = useState(null);
-
-    useEffect(() => {
-        if (account) {
-            // Fetch user role from Azure AD claims or from your backend
-            // setUserRole(...); // Set the user role based on the information
-        }
-    }, [account]);
-
-    if (!account) {
-        return <SignInButton />;
-    }
-
-    return (
-        <>
-            <Navbar userRole={userRole} />
-            {userRole === 'Manager' ? <ManagerView /> : <OperativeView />}
-        </>
-    );
-};
-
 const App = () => {
-    const msalInstance = new PublicClientApplication(msalConfig);
+  // Placeholder functions for handling login, will be replaced with actual logic later
+  const handleLogin = (event) => {
+    event.preventDefault();
+    // TODO: Implement login logic
+  };
 
-    return (
-        <MsalProvider instance={msalInstance}>
-            <div className="App">
-                <header>
-                    <img src={logo} alt="Logo" />
-                </header>
-                <MainContent />
-                <SignOutButton />
-            </div>
-        </MsalProvider>
-    );
+  const handleMicrosoftSignIn = () => {
+    // TODO: Implement Microsoft Sign In logic
+  };
+
+  return (
+    <div className="login-container">
+      <h1>Login to Your App</h1>
+      <form onSubmit={handleLogin}>
+        <div className="form-group">
+          <label htmlFor="login-email">Login name (e-mail)</label>
+          <input type="email" id="login-email" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="login-password">Password</label>
+          <input type="password" id="login-password" required />
+        </div>
+        <div className="actions">
+          <button type="submit">Login</button>
+          <button type="button" onClick={handleMicrosoftSignIn}>
+            Sign in with Microsoft
+          </button>
+        </div>
+      </form>
+      {/* Additional links or information */}
+      <a href="/forgot-password">Forgot your password?</a>
+      <a href="/signup">Sign up for free.</a>
+    </div>
+  );
 };
 
 export default App;
