@@ -17,7 +17,9 @@ Payments/Invoices/Billing
 
 # Prequisites
 
-Node.js and npm (Node Package Manager) installed on the server hosting these files
+Front end: Node.js/NMP
+
+Back end: MongoDB
 
 Azure AD application registration completed with the necessary redirect URIs
 
