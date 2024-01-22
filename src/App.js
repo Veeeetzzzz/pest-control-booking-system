@@ -7,6 +7,14 @@ import OperativeView from './OperativeView';
 import './App.css';
 import './Login.css';
 //import logo from './path-to-logo.png'; // Replace with path to your logo image
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/PMDH01xMK9t
+ */
+import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 const App = () => {
   // Placeholder functions for handling login, will be replaced with actual logic later
@@ -18,31 +26,53 @@ const App = () => {
   const handleMicrosoftSignIn = () => {
     // TODO: Implement Microsoft Sign In logic
   };
-
+  
+export default function Component() {
   return (
-    <div className="login-container">
-      <h1>Login to Your App</h1>
-      <form onSubmit={handleLogin}>
-        <div className="form-group">
-          <label htmlFor="login-email">Login name (e-mail)</label>
-          <input type="email" id="login-email" required />
+    <div
+      className="w-full h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/placeholder.svg')",
+      }}
+    >
+      <div className="flex items-center justify-center h-full">
+        <div className="w-full max-w-md bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+          <div className="flex items-center justify-center">
+            <img
+              alt="Microsoft Logo"
+              className="h-12 w-auto"
+              height="60"
+              src="/placeholder.svg"
+              style={{
+                aspectRatio: "120/60",
+                objectFit: "cover",
+              }}
+              width="120"
+            />
+          </div>
+          <h2 className="text-2xl font-bold text-center mt-4 mb-8">Pest Control Booking System</h2>
+          <form className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="email">Email</Label>
+              <Input id="email" placeholder="example@domain.com" required type="email" />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <Label htmlFor="password">Password</Label>
+                <Link className="text-sm underline text-gray-600 dark:text-gray-400" href="#">
+                  Forgot password?
+                </Link>
+              </div>
+              <Input id="password" required type="password" />
+            </div>
+            <Button className="w-full bg-blue-500 text-white" type="submit">
+              Sign in with Microsoft
+            </Button>
+          </form>
         </div>
-        <div className="form-group">
-          <label htmlFor="login-password">Password</label>
-          <input type="password" id="login-password" required />
-        </div>
-        <div className="actions">
-          <button type="submit">Login</button>
-          <button type="button" onClick={handleMicrosoftSignIn}>
-            Sign in with Microsoft
-          </button>
-        </div>
-      </form>
-      {/* Additional links or information */}
-      <a href="/forgot-password">Forgot your password?</a>
-      <a href="/signup">Sign up for free.</a>
+      </div>
     </div>
-  );
-};
+  )
+}
 
 export default App;
