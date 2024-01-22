@@ -5,6 +5,7 @@ import { msalConfig, loginRequest } from './authConfig';
 import ManagerView from './ManagerView';
 import OperativeView from './OperativeView';
 import './App.css';
+import './Login.css';
 //import logo from './path-to-logo.png'; // Replace with path to your logo image
 
 const App = () => {
