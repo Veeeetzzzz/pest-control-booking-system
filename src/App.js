@@ -69,5 +69,3 @@ export default function Component() {
     </div>
   )
 }
-
-export default App;
