@@ -21,8 +21,7 @@ const App = () => {
   const handleMicrosoftSignIn = () => {
     // TODO: Implement Microsoft Sign In logic
   };
-  
-export default function Component() {
+
   return (
     <div
       className="w-full h-screen bg-cover bg-center"
@@ -69,3 +68,5 @@ export default function Component() {
     </div>
   )
 }
+
+export default App;
