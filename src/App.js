@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider, useMsal, useAccount } from "@azure/msal-react";
 import { msalConfig, loginRequest } from './authConfig';
@@ -6,11 +6,6 @@ import ManagerView from './ManagerView';
 import OperativeView from './OperativeView';
 import './App.css';
 import './Login.css';
-//import logo from './path-to-logo.png'; // Replace with path to your logo image
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/PMDH01xMK9t
- */
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
