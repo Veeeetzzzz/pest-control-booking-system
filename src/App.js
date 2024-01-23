@@ -8,7 +8,7 @@ import './App.css';
 import './Login.css';
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
-import Link from "next/link"
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button"
 
 const App = () => {
