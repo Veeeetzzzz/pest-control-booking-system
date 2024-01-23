@@ -11,16 +11,16 @@ import { Input } from "@/components/ui/input"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-const App = () => {
-  // Placeholder functions for handling login, will be replaced with actual logic later
-  const handleLogin = (event) => {
-    event.preventDefault();
+// Placeholder functions for handling login, will be replaced with actual logic later
+//const App = () => {
+//  const handleLogin = (event) => {
+//    event.preventDefault();
     // TODO: Implement login logic
-  };
+//  };
 
-  const handleMicrosoftSignIn = () => {
-    // TODO: Implement Microsoft Sign In logic
-  };
+//  const handleMicrosoftSignIn = () => {
+//    // TODO: Implement Microsoft Sign In logic
+//  };
 
 export default function Component() {
   return (
