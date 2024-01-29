@@ -8,7 +8,7 @@ import './App.css';
 import './Login.css';
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
-import Link from "next/link"
+// import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 // Placeholder functions for handling login, will be replaced with actual logic later
