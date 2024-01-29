@@ -18,7 +18,7 @@ import './Login.css';
 //    // TODO: Implement Microsoft Sign In logic
 //  };
 
-export default function Component() {
+export default function App() {
   return (
 <div class="w-full h-screen bg-cover bg-center" style="background-image:url('/placeholder.svg')">
   <div class="flex items-center justify-center h-full">
