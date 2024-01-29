@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'; // This imports your App component
+import './login.css';
+import App from './App'; // This is correct if App.js is alongside index.js in the src directory.
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root') // This targets the div with id 'root' in your index.html file
+  document.getElementById('root')
 );
