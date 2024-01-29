@@ -82,4 +82,4 @@ export default function Component() {
 }
 
 
-export default App;
+export App;
