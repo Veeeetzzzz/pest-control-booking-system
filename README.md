@@ -10,11 +10,11 @@ A Pest Control booking system that utilises Azure AD for authentication and allo
 
 # Features
 
-- PowerBI Integration
-- Standalone Reporting
+- PowerBI integration
+- Standalone reporting
 - Payment processing integration
 - Azure Active Directory Single Sign On
-- Custom API endpoints for your data to integrate into CRM (Dynamics 365) or any other application that uses APIs.
+- Custom API endpoints for your data to integrate into other applications such as Dynamics 365 CRM
 
 # Prequisites
 
