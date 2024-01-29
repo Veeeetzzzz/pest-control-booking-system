@@ -1,29 +1,28 @@
 # Pest Control Booking System
-A Pest Control booking system that utilises Azure AD for authentication and allows managers to assign jobs and operatives to see details/act on appointments.
+A Pest Control booking system that utilises Azure AD for authentication and allows managers to assign jobs and operatives to see details/act on appointments. Includes integration for external reporting tools like PowerBI as well as built in reporting tools for ad hoc queries. Also supports various payment processors and you can set up custom API end points for other applications to consume the data from this application.
+
+# Concept 
+
+![Screenshot 2024-01-29 at 19-06-31 ### Manager Dashboard - Pest Control Booking System](https://github.com/Veeeetzzzz/pest-control-booking-system/assets/40268197/893bd7db-a317-490e-84ef-c78530294817)
+
+![image](https://github.com/Veeeetzzzz/pest-control-booking-system/assets/40268197/7a2b4deb-c676-4b39-b166-08c8958858db)
+
 
 # Features
 
-
-Assign Roles in Azure AD: Assign roles to users in Azure AD. You can use Azure AD groups or custom attributes to define roles like Manager or Operative.
-
-Managers: Assign jobs, update jobs & delete jobs. 
-
-Operatives: Update jobs
-
-TBA:
-
-Reports
-Payments/Invoices/Billing
+- PowerBI Integration
+- Standalone Reporting
+- Payment processing integration
+- Azure Active Directory Single Sign On
+- Custom API endpoints for your data to integrate into CRM (Dynamics 365) or any other application that uses APIs.
 
 # Prequisites
 
-Front end: Node.js/NMP
+- Backend: MongoDB
+- Frontend: Node.js
+- Azure AD Application for AD SSO
+- Azure/Vercel.
 
-Back end: MongoDB
-
-Azure AD application registration completed with the necessary redirect URIs
-
-Suitable host that supports Github intergration - Azure Web Services & Vercel both offer React tempalates to link your Github too and easily deploy this project.
 
 # Installation
 
