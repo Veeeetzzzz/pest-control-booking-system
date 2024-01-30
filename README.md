@@ -3,9 +3,25 @@ A Pest Control booking system that utilises Azure AD for authentication and allo
 
 # Concept 
 
+## Dashboard - Manager View
+
 ![Screenshot 2024-01-29 at 19-06-31 ### Manager Dashboard - Pest Control Booking System](https://github.com/Veeeetzzzz/pest-control-booking-system/assets/40268197/893bd7db-a317-490e-84ef-c78530294817)
 
+## Bookings - Manager View
+
 ![image](https://github.com/Veeeetzzzz/pest-control-booking-system/assets/40268197/7a2b4deb-c676-4b39-b166-08c8958858db)
+
+## Customers - Manager View
+
+![A Customers](https://github.com/Veeeetzzzz/pest-control-booking-system/assets/40268197/6a4f9280-1402-4f9d-b0ac-a9fceeb1bc79)
+
+## Technicians - Manager View
+
+![B Technicians](https://github.com/Veeeetzzzz/pest-control-booking-system/assets/40268197/d563c990-bd49-4b50-8533-f1dbca6f6341)
+
+## Reports  - Manager View
+
+![C Reports](https://github.com/Veeeetzzzz/pest-control-booking-system/assets/40268197/73c7d451-69d7-40e2-b03b-e2bd43fafbac)
 
 
 # Features
