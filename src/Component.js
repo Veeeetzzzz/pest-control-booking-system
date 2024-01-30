@@ -4,6 +4,8 @@ import { loginRequest } from './authConfig';
 
 export default function Component() {
   const { instance } = useMsal();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleLogin = (loginType) => {
     if(loginType === "popup") {
@@ -15,34 +17,40 @@ export default function Component() {
         console.error(e);
       });
     }
-  }
-  
+  };
+
   return (
-    <div className="w-full h-screen bg-gray-100 dark:bg-gray-900">
-      <div className="flex items-center justify-center h-full">
-        <div className="w-full max-w-md bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
-          <div className="flex items-center justify-center">
-            <img
-              src="/placeholder.svg"
-              alt="Microsoft Logo"
-              width="120"
-              height="60"
-              className="h-12 w-auto"
-              style={{ aspectRatio: "120 / 60", objectFit: "cover" }}
-            />
-          </div>
-          <h2 className="text-2xl font-bold text-center mt-4 mb-8">Pest Control Booking System</h2>
-          <div className="space-y-4">
-            <p className="text-center text-gray-600 dark:text-gray-400">Please sign in with your Microsoft Account</p>
-            <button
-              onClick={() => handleLogin("popup")}
-              className="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 w-full bg-blue-500 text-white flex items-center justify-center"
-            >
-              Sign in with Microsoft
-            </button>
-          </div>
+    <div className="w-full h-screen flex justify-center items-center">
+      <div className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full">
+        <div className="flex justify-center mb-4">
+          <img src="/placeholder.svg" alt="Placeholder" className="h-12" />
+        </div>
+        <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
+        <div>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full mb-4 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full mb-4 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <a href="#" className="text-sm text-blue-600 hover:underline">Forgot password?</a>
+          <button
+            onClick={() => handleLogin("popup")}
+            className="mt-8 mb-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors"
+          >
+            Sign in with Microsoft
+          </button>
         </div>
       </div>
     </div>
   );
+}
 }
