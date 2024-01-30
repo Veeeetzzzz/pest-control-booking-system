@@ -6,48 +6,39 @@ import ManagerView from './ManagerView';
 import OperativeView from './OperativeView';
 import './App.css';
 import './Login.css';
-import { Button } from "@/components/ui/button"
 
 //To do: AD Azure SSO Logic
 
 export default function Component() {
   return (
-    <div className="w-full h-screen bg-gray-100 dark:bg-gray-900">
-      <div className="flex items-center justify-center h-full">
-        <div className="w-full max-w-md bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
-          <div className="flex items-center justify-center">
-            <img
-              alt="Microsoft Logo"
-              className="h-12 w-auto"
-              height="60"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "120/60",
-                objectFit: "cover",
-              }}
-              width="120"
-            />
-          </div>
-          <h2 className="text-2xl font-bold text-center mt-4 mb-8">Pest Control Booking System</h2>
-          <div className="space-y-4">
-            <p className="text-center text-gray-600 dark:text-gray-400">Please sign in with your Microsoft Account</p>
-            <Button className="w-full bg-blue-500 text-white flex items-center justify-center">
-              <img
-                alt="Microsoft Logo"
-                className="mr-2"
-                height="20"
-                src="/placeholder.svg"
-                style={{
-                  aspectRatio: "20/20",
-                  objectFit: "cover",
-                }}
-                width="20"
-              />
-              Sign in with Microsoft
-            </Button>
-          </div>
-        </div>
+<div class="w-full h-screen bg-gray-100 dark:bg-gray-900">
+  <div class="flex items-center justify-center h-full">
+    <div class="w-full max-w-md bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+      <div class="flex items-center justify-center">
+        <img
+          src="/placeholder.svg"
+          alt="Microsoft Logo"
+          width="120"
+          height="60"
+          class="h-12 w-auto"
+          style="aspect-ratio: 120 / 60; object-fit: cover;"
+        />
+      </div>
+      <h2 class="text-2xl font-bold text-center mt-4 mb-8">Pest Control Booking System</h2>
+      <div class="space-y-4">
+        <p class="text-center text-gray-600 dark:text-gray-400">Please sign in with your Microsoft Account</p>
+        <button class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 w-full bg-blue-500 text-white flex items-center justify-center">
+          <img
+            src="/placeholder.svg"
+            alt="Microsoft Logo"
+            width="20"
+            height="20"
+            class="mr-2"
+            style="aspect-ratio: 20 / 20; object-fit: cover;"
+          />
+          Sign in with Microsoft
+        </button>
       </div>
     </div>
-  )
-}
+  </div>
+</div>
