@@ -1,7 +1,6 @@
 import React from 'react';
 import { useMsal } from "@azure/msal-react";
 import { loginRequest } from './authConfig';
-import './Login.css';
 
 export default function Component() {
   const { instance } = useMsal();
