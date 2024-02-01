@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useMsal } from "@azure/msal-react";
 import { loginRequest } from './authConfig';
-import React, { useState } from 'react';
 
 export default function Component() {
   const { instance } = useMsal();
