@@ -1,0 +1,28 @@
+/* Component.css */
+.login-container {
+  @apply w-full h-screen flex justify-center items-center bg-gray-100;
+}
+
+.login-box {
+  @apply bg-white rounded-lg shadow-xl p-8 max-w-sm w-full;
+}
+
+.login-logo {
+  @apply h-12;
+}
+
+.login-title {
+  @apply text-2xl font-bold text-center mb-8;
+}
+
+.input-field {
+  @apply w-full mb-4 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.forgot-password {
+  @apply text-sm text-blue-600 hover:underline;
+}
+
+.signin-btn {
+  @apply mt-8 mb-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors;
+}
