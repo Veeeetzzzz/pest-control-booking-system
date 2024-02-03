@@ -4,7 +4,18 @@ Note:
 
 This is work-in-progress/being built in public.
 
+This repository should not be considered a suitable branch for production, it is subject to experimentation and all commits are being submitted with a build-in-public approach.
+
 A Pest Control booking system that utilises Azure AD for authentication and allows managers to assign jobs and operatives to see details/act on appointments. Includes integration for external reporting tools like PowerBI as well as built in reporting tools for ad hoc queries. Also supports various payment processors and you can set up custom API end points for other applications to consume the data from this application.
+
+# Roadmap
+
+- Azure Active Directory Single Sign On (SSO) ✅
+- Update landing/log in page CSS files
+- Manager view front end
+- Manager view back end database logic
+- Operative view front end
+- Operative view back end database logic
 
 # Concept 
 
