@@ -12,9 +12,9 @@ A Pest Control booking system that utilises Azure AD for authentication and allo
 
 - Azure Active Directory Single Sign On (SSO) ✅
 - Update landing/log in page CSS files
-- Manager view front end
+- Manager view front end ✅
 - Manager view back end database logic
-- Operative view front end
+- Operative view front end ✅
 - Operative view back end database logic
 
 # Concept 
