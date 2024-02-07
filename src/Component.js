@@ -96,6 +96,7 @@ export default function Component() {
             onClick={() => handleLogin("popup")}
             className="mt-8 mb-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors"
           >
+            <img src="/ms-symbollockup_signin_light.png" alt="Sign in with Microsoft" className="h-6 mr-2" />
             Sign in with Microsoft
           </button>
         </div>
