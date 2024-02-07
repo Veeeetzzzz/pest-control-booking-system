@@ -92,13 +92,12 @@ export default function Component() {
             className="w-full mb-4 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <a href="#" className="text-sm text-blue-600 hover:underline">Forgot password?</a>
-          <button
-            onClick={() => handleLogin("popup")}
-            className="mt-8 mb-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors"
-          >
-            <img src="/ms-symbollockup_signin_light.png" alt="Sign in with Microsoft" className="h-6 mr-2" />
-            Sign in with Microsoft
-          </button>
+<button
+  onClick={() => handleLogin("popup")}
+  className="mt-8 mb-4 w-full bg-blue-500 py-2 rounded-lg hover:bg-blue-600 transition-colors flex justify-center items-center"
+>
+  <img src="/ms-symbollockup_signin_light.png" alt="Sign in with Microsoft" className="h-6" />
+</button>
         </div>
       </div>
     </div>
