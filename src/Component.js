@@ -71,7 +71,7 @@ export default function Component() {
     <div className="w-full h-screen flex justify-center items-center">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full">
         <div className="flex justify-center mb-4">
-          <img src="/placeholder.svg" alt="Placeholder" className="h-12" />
+          <img src="images/PC_LOGO.png" alt="Placeholder" className="h-12" />
         </div>
         <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
 <img
