@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useMsal } from "@azure/msal-react";
 import { loginRequest } from './authConfig';
 import './Component.css';
+import pcLogo from './images/PC_LOGO.png';
+import msLogo from './images/ms-symbollockup_signin_light.png';
 //These imports aren't ready to use yet.
 // import { Client } from "@microsoft/microsoft-graph-client";
 // import ManagerView from "./ManagerView";
@@ -68,19 +70,19 @@ export default function Component() {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center items-center">
-      <div className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full">
-        <div className="flex justify-center mb-4">
-          <img src="src/images/PC_LOGO.png" alt="Placeholder" className="h-12" />
-        </div>
-        <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
-<img
-  src="src/images/ms-symbollockup_signin_light.png"
-  alt="Sign in with Microsoft"
-  className="mt-8 mb-4 w-full cursor-pointer"
-  onClick={() => handleLogin("popup")}
-/>
-        </div>
+  <div className="w-full h-screen flex justify-center items-center">
+    <div className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full">
+      <div className="flex justify-center mb-4">
+        <img src={pcLogo} alt="Placeholder" className="h-12" />
       </div>
+      <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
+      <img
+        src={msLogo}
+        alt="Sign in with Microsoft"
+        className="mt-8 mb-4 w-full cursor-pointer"
+        onClick={() => handleLogin("popup")}
+      />
+    </div>
+  </div>
   );
 }
