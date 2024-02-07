@@ -9,8 +9,6 @@ import './Component.css';
 
 export default function Component() {
   const { instance } = useMsal();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
   // Not yet implemented
   // const [role, setRole] = useState(null);
 
@@ -76,22 +74,6 @@ export default function Component() {
           <img src="/placeholder.svg" alt="Placeholder" className="h-12" />
         </div>
         <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
-        <div>
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full mb-4 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="w-full mb-4 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-          <a href="#" className="text-sm text-blue-600 hover:underline">Forgot password?</a>
 <img
   src="/ms-symbollockup_signin_light.png"
   alt="Sign in with Microsoft"
@@ -100,6 +82,5 @@ export default function Component() {
 />
         </div>
       </div>
-    </div>
   );
 }
