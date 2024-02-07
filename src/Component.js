@@ -75,7 +75,7 @@ export default function Component() {
         </div>
         <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
 <img
-  src="/ms-symbollockup_signin_light.png"
+  src="images/ms-symbollockup_signin_light.png"
   alt="Sign in with Microsoft"
   className="mt-8 mb-4 w-full cursor-pointer"
   onClick={() => handleLogin("popup")}
