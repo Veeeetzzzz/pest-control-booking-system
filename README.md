@@ -16,6 +16,8 @@ A Pest Control booking system that utilises Azure AD for authentication and allo
 - Manager view logic
 - Operative view front end ✅
 - Operative view logic
+- MongoDB API for reporting
+- ODBC Data Source for PowerBI integration
 
 # Concept 
 
