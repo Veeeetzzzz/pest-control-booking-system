@@ -11,7 +11,7 @@ A Pest Control booking system that utilises Azure AD for authentication and allo
 # Roadmap
 
 - Azure Active Directory Single Sign On (SSO) ✅
-- Update landing/log in page CSS files
+- Update landing/log in page CSS files with Tailwind CSS
 - Manager view front end ✅
 - Manager view logic
 - Operative view front end ✅
