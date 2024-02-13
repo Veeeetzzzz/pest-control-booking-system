@@ -6,6 +6,7 @@ import './Component.css';
 // import { Client } from "@microsoft/microsoft-graph-client";
 // import ManagerView from "./ManagerView";
 // import OperativeView from "./OperativeView";
+// import SignInButton from './SignInButton'; //
 
 export default function Component() {
   const { instance } = useMsal();
@@ -66,6 +67,23 @@ export default function Component() {
       });
     }
   };
+
+  // Not in use / will replace current sign in logic to allow for accessibility functions
+  //  <div>
+  //  <div class="hero min-h-screen bg-base-200">
+  //    <div class="hero-content flex-col lg:flex-row">
+  //      <img src="/images/PC_LOGO.PNG" class="max-w-sm rounded-lg shadow-2xl" />
+  //      <div>
+  //        <h1 class="text-5xl font-bold">Pest Control Booking System</h1>
+  //        <SignInButton handleLogin={handleLogin} />
+  //        <p class="py-6">No account? Click here to contact the IT Help Desk.</p>
+  //      </div>
+  //    </div>
+  //  </div>
+  // </div>
+
+
+  
   return (
     <div>
       <div class="hero min-h-screen bg-base-200">
