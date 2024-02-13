@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useMsal } from "@azure/msal-react";
 import { loginRequest } from './authConfig';
-// import './Component.css';
+import './Component.css';
 //These imports aren't ready to use yet.
 // import { Client } from "@microsoft/microsoft-graph-client";
 // import ManagerView from "./ManagerView";
