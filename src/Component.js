@@ -66,13 +66,14 @@ export default function Component() {
       });
     }
   };
-
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-gray-100">
-      <div className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full flex flex-col items-center">
-        <img src="/images/PC_LOGO.PNG" alt="Logo" className="h-12 mb-4" />
-        <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
-<button 
+    <div>
+      <div class="hero min-h-screen bg-base-200">
+  <div class="hero-content flex-col lg:flex-row">
+    <img src="/images/PC_LOGO.PNG" class="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 class="text-5xl font-bold">Pest Control Booking System</h1>
+      <button 
   className="btn w-full h-12 mb-4 rounded-lg overflow-hidden p-0 relative cursor-pointer transition-colors duration-150 ease-in-out hover:bg-blue-600 focus:outline-none"
   onClick={() => handleLogin("popup")}
   onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleLogin("popup") }}
@@ -88,7 +89,10 @@ export default function Component() {
     style={{ objectFit: "cover" }} // Ensure the image covers the button area without stretching
   />
 </button>
-      </div>
+<p class="py-6">No account? Click here to contact the IT Help Desk.</p>
+    </div>
+  </div>
+</div>
     </div>
   );
 }
