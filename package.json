@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "add-v0": "npx v0 add Bp97ozQsOUY",
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
