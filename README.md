@@ -10,7 +10,7 @@ A Pest Control booking system that utilises Azure AD for authentication and allo
 
 # Roadmap
 
-- CSS styling for login page
+- Implement DaisyCSS styling on login page
 
 # Concept 
 
