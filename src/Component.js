@@ -72,17 +72,22 @@ export default function Component() {
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full flex flex-col items-center">
         <img src="/images/PC_LOGO.PNG" alt="Logo" className="h-12 mb-4" />
         <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
-        {/* The image below is used as a button for login, using onMouseDown for immediate feedback */}
-        <img
-          src="/images/ms-symbollockup_signin_light.png"
-          alt="Sign in with Microsoft"
-          className="w-full h-12 mb-4 cursor-pointer rounded-lg transition-colors duration-150 ease-in-out hover:bg-blue-600 hover:opacity-75"
-          onClick={() => handleLogin("popup")}
-          onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleLogin("popup") }} // for accessibility if focused and keys are pressed
-          tabIndex="0" // Make it focusable
-          role="button" // ARIA role for better screen reader support
-          aria-pressed="false" 
-        />
+<button 
+  className="btn w-full h-12 mb-4 rounded-lg overflow-hidden p-0 relative cursor-pointer transition-colors duration-150 ease-in-out hover:bg-blue-600 focus:outline-none"
+  onClick={() => handleLogin("popup")}
+  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleLogin("popup") }}
+  tabIndex="0"
+  role="button"
+  aria-pressed="false"
+  style={{ lineHeight: "0" }} // This removes the extra space around the image
+>
+  <img
+    src="/images/ms-symbollockup_signin_light.png"
+    alt="Sign in with Microsoft"
+    className="w-full h-full"
+    style={{ objectFit: "cover" }} // Ensure the image covers the button area without stretching
+  />
+</button>
       </div>
     </div>
   );
