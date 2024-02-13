@@ -68,17 +68,22 @@ export default function Component() {
   };
 
   return (
-<div className="w-full h-screen flex justify-center items-center">
-  <div className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full flex flex-col items-center">
-    <img src="/images/PC_LOGO.PNG" alt="Logo" className="h-12 mb-4" />
-    <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
-    <img
-      src="/images/ms-symbollockup_signin_light.png"
-      alt="Sign in with Microsoft"
-      className="w-full cursor-pointer"
-      onClick={() => handleLogin("popup")}
-    />
-  </div>
-</div>
+    <div className="w-full h-screen flex justify-center items-center bg-gray-100">
+      <div className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full flex flex-col items-center">
+        <img src="/images/PC_LOGO.PNG" alt="Logo" className="h-12 mb-4" />
+        <h2 className="text-2xl font-bold text-center mb-8">Pest Control Booking System</h2>
+        {/* The image below is used as a button for login, using onMouseDown for immediate feedback */}
+        <img
+          src="/images/ms-symbollockup_signin_light.png"
+          alt="Sign in with Microsoft"
+          className="w-full h-12 mb-4 cursor-pointer rounded-lg transition-colors duration-150 ease-in-out hover:bg-blue-600 hover:opacity-75"
+          onClick={() => handleLogin("popup")}
+          onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleLogin("popup") }} // for accessibility if focused and keys are pressed
+          tabIndex="0" // Make it focusable
+          role="button" // ARIA role for better screen reader support
+          aria-pressed="false" 
+        />
+      </div>
+    </div>
   );
 }
