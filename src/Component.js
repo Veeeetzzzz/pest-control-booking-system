@@ -6,7 +6,7 @@ import './Component.css';
 // import { Client } from "@microsoft/microsoft-graph-client";
 // import ManagerView from "./ManagerView";
 // import OperativeView from "./OperativeView";
-// import SignInButton from './SignInButton'; //
+import SignInButton from './SignInButton'; //
 
 export default function Component() {
   const { instance } = useMsal();
