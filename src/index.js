@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import './Login.css';
 import App from './App'; // This is correct if App.js is alongside index.js in the src directory.
 
 ReactDOM.render(
