@@ -1,5 +1,8 @@
 import React from 'react';
 
+//This is not ready yet.
+//To do: Update Avatar button to pull through profile of user who has signed in
+
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
