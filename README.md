@@ -10,7 +10,8 @@ A Pest Control booking system that utilises Azure AD for authentication and allo
 
 # Current issues/WIP
 
-- Refine CSS for login page
+- Navbar w/ integration to MS Graph API to access profile picture etc.
+- Login layout refinment 
 
 # Concept 
 
