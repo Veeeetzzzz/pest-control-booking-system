@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import './App.css';
 import './globals.css';
-import App from './App'; // This is correct if App.js is alongside index.js in the src directory.
+import App from './App'; //
 
 ReactDOM.render(
   <React.StrictMode>
